@@ -1,0 +1,318 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "Alberto",
+      "email": "jedidas@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 3,
+      "name": "David",
+      "email": "jedidas777@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 4,
+      "name": "Nuevo",
+      "email": "email@email.com",
+      "password": "123"
+    },
+    {
+      "id": 5,
+      "name": "David Mora Arroyo",
+      "email": "jediasdadas@gmail.com",
+      "password": "asdas"
+    },
+    {
+      "id": 6,
+      "name": "Nuevo",
+      "email": "nuevo@email.com",
+      "password": "123"
+    },
+    {
+      "id": 7,
+      "name": "David Mora Arroyo",
+      "email": "jedidas@gmaisssl.com",
+      "password": "asdsa"
+    },
+    {
+      "id": 8,
+      "name": "Pruebas",
+      "email": "pruebas@email.com",
+      "password": "123"
+    },
+    {
+      "id": 9,
+      "name": "David Mora Arroyo",
+      "email": "jedidasnew@gmail.com",
+      "password": "hola"
+    },
+    {
+      "id": 10,
+      "name": "Usuario 1",
+      "email": "email1@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 11,
+      "name": "Usuario 2",
+      "email": "email2@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 12,
+      "name": "Usuario 3",
+      "email": "email3@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 13,
+      "name": "Usuario 4",
+      "email": "email4@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 14,
+      "name": "Usuario 5",
+      "email": "email5@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 15,
+      "name": "Usuario 6",
+      "email": "email6@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 16,
+      "name": "Usuario 16",
+      "email": "email16@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 17,
+      "name": "Usuario 17",
+      "email": "email17@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 18,
+      "name": "Usuario 18",
+      "email": "email18@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 19,
+      "name": "Usuario 19",
+      "email": "email19@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 20,
+      "name": "Usuario 20",
+      "email": "email20@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 21,
+      "name": "Usuario 21",
+      "email": "email21@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 22,
+      "name": "Usuario 22",
+      "email": "email22@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 23,
+      "name": "Usuario 23",
+      "email": "email23@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 24,
+      "name": "Usuario 24",
+      "email": "email24@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 25,
+      "name": "Usuario 25",
+      "email": "email25@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 26,
+      "name": "Usuario 26",
+      "email": "email26@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 27,
+      "name": "Usuario 27",
+      "email": "email27@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 28,
+      "name": "Usuario 28",
+      "email": "email28@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 29,
+      "name": "Usuario 29",
+      "email": "email29@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 30,
+      "name": "Usuario 30",
+      "email": "email30@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 31,
+      "name": "Pedro Picapiedra",
+      "email": "pedro@email.com",
+      "password": "123"
+    }
+  ],
+  "categories": [
+    {
+      "id": 5,
+      "name": "rudy",
+      "code": "rudy",
+      "description": "rudy"
+    },
+    {
+      "id": 6,
+      "name": "Ropa",
+      "code": "clothes",
+      "description": "Esta es la ropa del usuario"
+    },
+    {
+      "id": 7,
+      "name": "Comida",
+      "code": "food",
+      "description": "Comida"
+    },
+    {
+      "id": 8,
+      "name": "Autos",
+      "code": "car",
+      "description": "Categoría de carros"
+    },
+    {
+      "id": 9,
+      "name": "Mujeres",
+      "code": "girls",
+      "description": "girls"
+    }
+  ],
+  "products": [
+    {
+      "id": "2J4WroI",
+      "name": "Graphic card",
+      "price": 27500,
+      "description": "Tarjeta de Video",
+      "height": 40,
+      "width": 50,
+      "weight": 60,
+      "img": "https://loremflickr.com/320/320/graphic card"
+    },
+    {
+      "id": "CPVltCC",
+      "name": "lunch-food",
+      "price": 3500,
+      "description": "Este es un casado",
+      "height": 40,
+      "width": 40,
+      "weight": 40,
+      "img": "https://loremflickr.com/320/320/lunch-food"
+    },
+    {
+      "id": "IxHFOjS",
+      "name": "hot-girl",
+      "price": 10,
+      "description": "hot-girl",
+      "height": 20,
+      "width": 30,
+      "weight": 50,
+      "img": "https://loremflickr.com/320/320/hot-girl"
+    },
+    {
+      "id": "2M3MFaB",
+      "name": "cars",
+      "price": 5000000,
+      "description": "cars",
+      "height": 20,
+      "width": 20,
+      "weight": 20,
+      "img": "https://loremflickr.com/320/320/cars"
+    },
+    {
+      "id": "1sIV1Gg",
+      "name": "motorcycle",
+      "price": 30000,
+      "description": "motorcycle",
+      "height": 150,
+      "width": 200,
+      "weight": 6000,
+      "img": "https://loremflickr.com/320/320/motorcycle"
+    },
+    {
+      "id": "F0H74EI",
+      "name": "Glasses",
+      "price": 87000,
+      "description": "Glasses",
+      "height": 30,
+      "width": 30,
+      "weight": 30,
+      "img": "https://loremflickr.com/320/320/glasses"
+    },
+    {
+      "id": "bYQlvux",
+      "name": "Dance",
+      "price": 500,
+      "description": "Dance",
+      "height": 450,
+      "width": 687,
+      "weight": 741,
+      "img": "https://loremflickr.com/320/320/dance"
+    },
+    {
+      "id": "nQ2Mom_",
+      "name": "Danger",
+      "price": 750,
+      "description": "Danger",
+      "height": 40,
+      "width": 40,
+      "weight": 50,
+      "img": "https://loremflickr.com/320/320/danger"
+    },
+    {
+      "id": "Qnw6yPI",
+      "name": "Error",
+      "price": 5700,
+      "description": "Error",
+      "height": 750,
+      "width": 570,
+      "weight": 6080,
+      "img": "https://loremflickr.com/320/320/error"
+    },
+    {
+      "id": "vmDxAFS",
+      "name": "Test new",
+      "price": 540050,
+      "description": "Test new",
+      "height": 4040,
+      "width": 40,
+      "weight": 500,
+      "img": "https://loremflickr.com/320/320/test new"
+    }
+  ]
+}

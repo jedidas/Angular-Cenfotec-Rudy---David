@@ -1,0 +1,33 @@
+{
+  "customers": [{
+      "img": "https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png",
+      "name": "Pepito",
+      "desc": "Esta es una descripcion"
+    },
+    {
+      "img": "https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png",
+      "name": "Juan",
+      "desc": "ALgo"
+    },
+    {
+      "img": "https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png",
+      "name": "Pedro",
+      "desc": "ALgo"
+    },
+    {
+      "img": "https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png",
+      "name": "Miguel",
+      "desc": "ALgo"
+    },
+    {
+      "img": "https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png",
+      "name": "Rudy",
+      "desc": "ALgo"
+    },
+    {
+      "img": "https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png",
+      "name": "David",
+      "desc": "ALgo"
+    }
+  ]
+}

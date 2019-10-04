@@ -1,0 +1,17 @@
+<div class="card" id="product-{{ product.id }}">
+  <img [src]="product.img" class="card-img-top" alt="{{ product.name }}">
+  <div class="card-body">
+
+    <h5 class="card-title">{{ product.name }}</h5>
+    <h6>Precio: ${{ product.price }}</h6>
+    <p class="card-text">{{ product.description }}</p>
+
+    <div class="btn-clearfix" role="group" aria-label="">
+
+      <button type="button" class="btn btn-primary mr-2" (click)="editProduct(product)">{{ "GLOBAL.EDIT" | translate }}</button>
+      <button type="button" class="btn btn-danger" (click)="confirmModal.emit(product)">{{ "GLOBAL.DELETE" | translate }}</button>
+
+    </div>
+
+  </div>
+</div>

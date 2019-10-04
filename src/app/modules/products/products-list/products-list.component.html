@@ -1,0 +1,16 @@
+<h1 class="mb-4">{{ "PRODUCTS.TITLE" | translate }}</h1>
+
+<div class="col-12 mb-3">
+  <button type="button" class="btn btn-primary"
+    (click)="openModal({action:true,item:null})">{{ "GLOBAL.ADD" | translate }}</button>
+</div>
+
+<div class="row">
+  <div class="col col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let product of returnedArray">
+    <stats-product-item [product]="product" (openModal)="openModal($event)" (confirmModal)="confirmModal($event)"></stats-product-item>
+  </div>
+  <div class="col-12">
+      <pagination [totalItems]="products.length" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)"
+        [itemsPerPage]="itemsPerPage" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+    </div>
+</div>

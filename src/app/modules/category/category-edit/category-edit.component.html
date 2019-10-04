@@ -1,0 +1,48 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{ 'CATEGORIES.ADD' | translate }}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+
+  <form [formGroup]="form" (ngSubmit)="createUpdateCategory()">
+    <div class="form-row">
+      <input type="hidden" name="id" id="id" formControlName="id">
+
+      <div class="form-group col-12">
+        <label for="name">{{ 'CATEGORIES.TITLE' | translate }}</label>
+        <input name="name" type="text" class="form-control" id="name" placeholder="{{ 'CATEGORIES.TITLE' | translate }}"
+          formControlName="name" [class.is-invalid]="!isControlValid('name')">
+      </div>
+
+
+      <div class="form-group col-12">
+        <label for="code">{{ 'CATEGORIES.CODE' | translate }}</label>
+        <input name="code" type="text" class="form-control" id="code" placeholder="{{ 'CATEGORIES.CODE' | translate }}"
+          formControlName="code" [class.is-invalid]="!isControlValid('code')">
+      </div>
+
+
+      <div class="form-group col-12">
+        <label for="description">{{ 'CATEGORIES.DESCRIPTION' | translate }}</label>
+        <input name="description" type="text" class="form-control" id="description" placeholder="{{ 'CATEGORIES.DESCRIPTION' | translate }}"
+          formControlName="description" [class.is-invalid]="!isControlValid('description')">
+      </div>
+
+
+      <div class="alert alert-danger" *ngIf="errorMessage" role="alert">
+        {{ errorMessage }}
+      </div>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      <span *ngIf="!createState">{{ 'CATEGORIES.EDIT' | translate }}</span>
+      <span *ngIf="createState">{{ 'CATEGORIES.ADD' | translate }}</span>
+    </button>
+
+  </form>
+
+
+</div>

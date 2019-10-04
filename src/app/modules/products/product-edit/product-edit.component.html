@@ -1,0 +1,65 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">
+    <span *ngIf="action">{{ "GLOBAL.CREATE" | translate }}</span>
+    <span *ngIf="!action">{{ "GLOBAL.UPDATE" | translate }}</span>
+  </h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+
+  <form [formGroup]="form" (ngSubmit)="send()">
+
+    <input type="hidden" name="id" id="id" formControlName="id">
+
+    <div class="form-group col-12">
+      <label for="name">{{ 'GLOBAL.NAME' | translate }}</label>
+      <input name="name" type="text" class="form-control" id="name" placeholder="{{ 'GLOBAL.NAME' | translate }}"
+        formControlName="name" [class.is-invalid]="!isControlValid('name')">
+    </div>
+
+    <div class="form-group col-12">
+      <label for="price">{{ 'GLOBAL.PRICE' | translate }}</label>
+      <input name="price" type="number" class="form-control" id="price" placeholder="{{ 'GLOBAL.PRICE' | translate }}"
+        formControlName="price" [class.is-invalid]="!isControlValid('price')">
+    </div>
+
+    <div class="form-row col-12 pb-3">
+      <label class="col-12">{{ 'GLOBAL.DETAILL' | translate }}</label>
+      <div class="col-12 col-md-4">
+        <label for="height" class="col-12 p-0">{{ 'GLOBAL.HEIGHT' | translate }}</label>
+        <input type="number" class="form-control" placeholder="{{ 'GLOBAL.HEIGHT' | translate }}"
+          placeholder="{{ 'GLOBAL.HEIGHT' | translate }}" formControlName="height"
+          [class.is-invalid]="!isControlValid('height')">
+      </div>
+      <div class="col-12 col-md-4">
+        <label for="width" class="col-12 p-0">{{ 'GLOBAL.WIDTH' | translate }}</label>
+        <input type="number" class="form-control" placeholder="{{ 'GLOBAL.WIDTH' | translate }}"
+          placeholder="{{ 'GLOBAL.WIDTH' | translate }}" formControlName="width"
+          [class.is-invalid]="!isControlValid('width')">
+      </div>
+      <div class="col-12 col-md-4">
+        <label for="weight" class="col-12 p-0">{{ 'GLOBAL.WEIGHT' | translate }}</label>
+        <input type="number" class="form-control" placeholder="{{ 'GLOBAL.WEIGHT' | translate }}"
+          placeholder="{{ 'GLOBAL.WEIGHT' | translate }}" formControlName="weight"
+          [class.is-invalid]="!isControlValid('weight')">
+      </div>
+    </div>
+
+    <div class="form-group col-12">
+      <label for="description">{{ 'GLOBAL.DESCRIPTION' | translate }}</label>
+      <textarea name="description" type="text" class="form-control" id="description"
+        placeholder="{{ 'GLOBAL.DESCRIPTION' | translate }}" formControlName="description"
+        [class.is-invalid]="!isControlValid('description')"></textarea>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">
+        <span *ngIf="!action">{{ "GLOBAL.UPDATE" | translate }}</span>
+        <span *ngIf="action">{{ "GLOBAL.CREATE" | translate }}</span>
+      </button>
+    </div>
+
+  </form>
+</div>

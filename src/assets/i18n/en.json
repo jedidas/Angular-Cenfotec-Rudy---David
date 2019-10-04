@@ -1,0 +1,44 @@
+{
+  "GLOBAL": {
+    "ADD": "Add",
+    "ITEMS_PER_PAGE": "Items per page",
+    "EDIT": "Edit",
+    "DELETE": "Delete",
+    "YES": "Yes",
+    "NO": "No",
+    "MESSAGE_CONFIRM": "Do you want to delete this record?",
+    "CREATE": "Create",
+    "UPDATE": "Update",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "NAME": "Name",
+    "RE_PASSWORD": "Re-enter password",
+    "PRICE": "Price",
+    "DETAILL": "Detaill",
+    "HEIGHT": "Height",
+    "WIDTH": "Width",
+    "WEIGHT": "Weight",
+    "DESCRIPTION": "Description"
+  },
+  "USERS": {
+    "TITLE": "Users"
+  },
+  "CATEGORIES": {
+    "TITLE": "Category Name",
+    "CODE": "Category Code",
+    "DESCRIPTION": "Category Description",
+    "ADD": "Add Category",
+    "EDIT": "Edit Category",
+    "MAINTITLE": "Categories"
+
+  },
+  "PRODUCTS": {
+    "TITLE": "Products"
+  },
+  "MENU": {
+    "HOME": "Home",
+    "LOGIN": "Log in",
+    "SIGN_IN": "Sign in",
+    "SIGN_OUT": "Sign Out"
+  }
+}

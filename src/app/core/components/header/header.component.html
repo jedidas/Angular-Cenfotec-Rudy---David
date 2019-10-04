@@ -1,0 +1,38 @@
+<ul class="nav nav-pills" *ngIf="!isLoggedIn">
+  <li class="nav-item">
+    <a class="nav-link active" [routerLink]="[ '/']">{{ "MENU.HOME" | translate }}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="[ '/login']">{{ "MENU.LOGIN" | translate }}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="[ '/signup']">{{ "MENU.SIGN_IN" | translate }}</a>
+  </li>
+  <select name="lang" id="lang" (change)="languageChange($event)">
+    <option [value]="languages.EN" [selected]="isDefaultLang(languages.EN)">EN</option>
+    <option [value]="languages.ES" [selected]="isDefaultLang(languages.ES)">ES</option>
+  </select>
+</ul>
+
+
+<ul class="nav nav-pills" *ngIf="isLoggedIn">
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="[ '/']" [ngClass]="{'active':route.url === '/'}">{{ "MENU.HOME" | translate }}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="[ '/users']" [ngClass]="{'active':route.url === '/users'}">{{ "USERS.TITLE" | translate }}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="[ '/categories']" [ngClass]="{'active':route.url === '/categories'}">{{ "CATEGORIES.MAINTITLE" | translate }}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="[ '/products']" [ngClass]="{'active':route.url === '/products'}">{{ "PRODUCTS.TITLE" | translate }}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="[ '/signoff']">{{ "MENU.SIGN_OUT" | translate }}</a>
+  </li>
+  <select name="lang" id="lang" (change)="languageChange($event)">
+    <option [value]="languages.EN" [selected]="isDefaultLang(languages.EN)">EN</option>
+    <option [value]="languages.ES" [selected]="isDefaultLang(languages.ES)">ES</option>
+  </select>
+</ul>

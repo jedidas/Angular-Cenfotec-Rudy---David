@@ -1,0 +1,57 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">
+      <span *ngIf="createState">{{ "GLOBAL.CREATE" | translate }}</span>
+      <span *ngIf="!createState">{{ "GLOBAL.UPDATE" | translate }}</span>
+  </h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="hide.emit($event)">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+
+
+  <form [formGroup]="form" (ngSubmit)="send()">
+    <div class="form-row">
+
+      <input type="hidden" name="id" id="id" formControlName="id">
+
+      <div class="form-group col-12">
+        <label for="name">{{ 'GLOBAL.NAME' | translate }}</label>
+        <input name="name" type="text" class="form-control" id="name" placeholder="{{ 'GLOBAL.NAME' | translate }}" formControlName="name"
+          [class.is-invalid]="!isControlValid('name')">
+      </div>
+
+      <div class="form-group col-12" *ngIf="createState">
+        <label for="inputEmail4">{{ 'GLOBAL.EMAIL' | translate }}</label>
+        <input name="email" type="email" class="form-control" placeholder="{{ 'GLOBAL.EMAIL' | translate }}" formControlName="email"
+          [class.is-invalid]="!isControlValid('email')">
+      </div>
+
+      <div class="form-group col-12">
+        <label for="password">{{ 'GLOBAL.PASSWORD' | translate }}</label>
+        <input type="password" name="password" formControlName="password" class="form-control" id="password"
+          placeholder="{{ 'GLOBAL.PASSWORD' | translate }}" [class.is-invalid]="!isControlValid('password')">
+      </div>
+
+      <div class="form-group col-12">
+        <label for="re_password">{{ 'GLOBAL.RE_PASSWORD' | translate }}</label>
+        <input type="password" name="re_password" formControlName="re_password" class="form-control" id="re_password"
+          placeholder="Re-enter password" [class.is-invalid]="!isControlValid('re_password')">
+      </div>
+
+      <div class="alert alert-danger" *ngIf="errorMessage" role="alert">
+        {{ errorMessage }}
+      </div>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      <span *ngIf="!createState">{{ "GLOBAL.UPDATE" | translate }}</span>
+      <span *ngIf="createState">{{ "GLOBAL.CREATE" | translate }}</span>
+    </button>
+
+  </form>
+
+
+
+</div>

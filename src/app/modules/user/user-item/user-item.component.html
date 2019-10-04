@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" class="card-img-top"
+      alt="{{ user.name }}">
+    <h5 class="card-title pt-3">{{ user.id }}: {{ user.name }}</h5>
+    <p>
+      <a href="{{ user.email }}" class="card-text">{{ user.id }}, {{ user.email }}</a>
+    </p>
+    <div class="btn-clearfix" role="group" aria-label="">
+      <button type="button" class="btn btn-primary mr-2" (click)="edit(user)">{{ "GLOBAL.EDIT" | translate }}</button>
+      <button type="button" class="btn btn-danger" (click)="confirmModal.emit(user)">{{ "GLOBAL.DELETE" | translate }}</button>
+    </div>
+  </div>
+</div>

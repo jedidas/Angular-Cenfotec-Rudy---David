@@ -1,0 +1,35 @@
+<h1 class="mb-4">{{ "USERS.TITLE" | translate }}</h1>
+
+<div class="row">
+
+  <div class="col-12 mb-3">
+    <button type="button" class="btn btn-primary"
+    (click)="openModal({action:true,item:null})">{{ "GLOBAL.ADD" | translate }}</button>
+  </div>
+
+  <div class="col-xs-12 col-12">
+    <div class="form-group float-right">
+      <label for="exampleFormControlSelect1">{{ "GLOBAL.ITEMS_PER_PAGE" | translate }}</label>
+      <select class="form-control" [(ngModel)]='itemsPerPage' (change)="changingItemsPerPage($event)">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="col col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let user of returnedArray">
+
+    <stats-user-item [user]="user" (openModal)="openModal($event)" (confirmModal)="confirmModal($event)"></stats-user-item>
+
+  </div>
+
+  <div class="col-xs-12 col-12">
+    <pagination [totalItems]="users.length" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)"
+      [itemsPerPage]="itemsPerPage" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+  </div>
+
+</div>
+
